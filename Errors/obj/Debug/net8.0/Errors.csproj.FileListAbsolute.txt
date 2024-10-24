@@ -1,0 +1,12 @@
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\bin\Debug\net8.0\Errors.deps.json
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\bin\Debug\net8.0\Errors.dll
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\bin\Debug\net8.0\Errors.pdb
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\Errors.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\Errors.AssemblyInfoInputs.cache
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\Errors.AssemblyInfo.cs
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\Errors.csproj.CoreCompileInputs.cache
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\Errors.sourcelink.json
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\Errors.dll
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\refint\Errors.dll
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\Errors.pdb
+D:\Repositorios\Project-App-Net-EcommerceApi\Errors\obj\Debug\net8.0\ref\Errors.dll

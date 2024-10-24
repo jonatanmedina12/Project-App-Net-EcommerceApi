@@ -1,0 +1,13 @@
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\bin\Debug\net8.0\Utilities.deps.json
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\bin\Debug\net8.0\Utilities.dll
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\bin\Debug\net8.0\Utilities.pdb
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.csproj.AssemblyReference.cache
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfoInputs.cache
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.AssemblyInfo.cs
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.csproj.CoreCompileInputs.cache
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.sourcelink.json
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.dll
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\refint\Utilities.dll
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\Utilities.pdb
+D:\Repositorios\Project-App-Net-EcommerceApi\Utilities\obj\Debug\net8.0\ref\Utilities.dll

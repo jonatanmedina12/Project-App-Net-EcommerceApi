@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "d6tqNVXilPuXJgScKeMILHArNgAYvJ8KqHZj2orLcHg=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
