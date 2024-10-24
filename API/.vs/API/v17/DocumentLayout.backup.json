@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6B8EA6-01F2-4421-9C64-08B36B3BCDDE}|..\\Models\\Models.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\models\\entidades\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Models\\Entidades\\Role.cs",
+              "RelativeDocumentMoniker": "..\\Models\\Entidades\\Role.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Models\\Entidades\\Role.cs",
+              "RelativeToolTip": "..\\Models\\Entidades\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T23:43:12.22Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
