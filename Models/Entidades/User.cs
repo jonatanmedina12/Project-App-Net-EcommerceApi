@@ -19,7 +19,7 @@ namespace Models.Entidades
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public bool IsActive { get; set; }
-
+        public bool IsLoginActive { get; set; }
         public string ProfilePhoto {  get; set; }
         public virtual ICollection<UserRole> UserRoles { get; set; }
         public virtual ICollection<Product> Products { get; set; }

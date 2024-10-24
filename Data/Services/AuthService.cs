@@ -34,7 +34,11 @@ namespace Data.Services
 
         }
 
+        public async Task<bool> logout(int  id)
+        {
+            return await _authRepository.Logout(id);
 
+        }
 
 
     }

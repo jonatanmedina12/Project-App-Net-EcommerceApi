@@ -11,7 +11,6 @@ namespace API.Controllers
     [EnableRateLimiting("fixed")]
     [ProducesResponseType(typeof(ApiResponse<>), StatusCodes.Status500InternalServerError)]
     [ProducesResponseType(typeof(ApiResponse<>), StatusCodes.Status401Unauthorized)]
-    [ProducesResponseType(typeof(ApiResponse<>), StatusCodes.Status429TooManyRequests)]
     [Authorize]
 
     public class AutenticacionController : ControllerBase

@@ -8,10 +8,12 @@ namespace Models.DTOs.Account
 {
     public class LoginResponseDto
     {
+        public int Id { get; set; }
         public string Token { get; set; }
         public string Username { get; set; }
         public List<string> Roles { get; set; }
         public DateTime TokenExpiration { get; set; }
+        public Boolean IsLoginActivo { get; set; }
 
     }
 }

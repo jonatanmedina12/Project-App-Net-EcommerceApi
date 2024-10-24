@@ -66,7 +66,11 @@ namespace Data.Repositories
                     _logger.LogWarning("Intento de inicio de sesión con cuenta inactiva: {Username}", loginDto.Email);
                     throw new UserNotActiveException();
                 }
+                if (user.IsLoginActive)
+                {
+                    throw new AuthenticationException("Ya tiene una sesión iniciada");
 
+                }
                 // Obtener la configuración de expiración del token
                 var tokenExpirationMinutes = 60; // valor por defecto
                 if (int.TryParse(_configuration["Jwt:TokenExpirationMinutes"], out int configuredMinutes))
@@ -79,13 +83,18 @@ namespace Data.Repositories
 
                 _logger.LogInformation("Usuario {Email} ha iniciado sesión exitosamente", loginDto.Email);
 
+                user.IsLoginActive = true;
+                await _iuserRepository.UpdateAsync(user);
                 // Crear respuesta
                 return new LoginResponseDto
                 {
+                    Id=user.Id,
                     Token = token,
                     Username = user.Username,
+
                     Roles = user.UserRoles?.Select(ur => ur.Role.Name).ToList() ?? new List<string>(),
-                    TokenExpiration = expiration
+                    TokenExpiration = expiration,
+                    IsLoginActivo = false,
                 };
             }
             catch (Exception ex) when (ex is not CustomException)
@@ -93,6 +102,32 @@ namespace Data.Repositories
                 _logger.LogError(ex, "Error durante el proceso de login para el usuario {email}", loginDto.Email);
                 throw new AuthenticationException("Error en el proceso de autenticación");
             }
+
+        }
+
+        public async Task<bool> Logout(int id)
+        {
+            try
+            {
+         
+                // Obtener usuario
+                var user = await _iuserRepository.GetByIdAsync(id);
+
+                if (user == null)
+                {
+                    throw new ValidationException();
+                }
+                user.IsLoginActive = false;
+                await _iuserRepository.UpdateAsync(user);
+                return true;
+
+              
+            }
+            catch (Exception ex) when (ex is not CustomException)
+            {
+                throw new AuthenticationException("Error en el proceso de autenticación");
+            }
+
 
         }
 

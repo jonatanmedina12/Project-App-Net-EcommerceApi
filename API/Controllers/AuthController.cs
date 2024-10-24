@@ -56,5 +56,19 @@ namespace API.Controllers
                 return Unauthorized(ApiResponse<object>.Failed(ex.Message, ex.ErrorCode));
             }
         }
+        [HttpPost("logout")]
+        public async Task<ActionResult<ApiResponse<bool>>> Logout([FromBody] int id)
+        {
+            try
+            {
+                var response = await _authService.logout(id);
+                return Ok(ApiResponse<bool>.Successful(response, "Sesion cerrada con exito"));
+            }
+            catch (CustomException ex)
+            {
+                return Unauthorized(ApiResponse<object>.Failed(ex.Message, ex.ErrorCode));
+            }
+        }
+        
     }
 }
