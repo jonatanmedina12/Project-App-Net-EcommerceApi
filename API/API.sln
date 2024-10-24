@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "..\Data\Data.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "..\Models\Models.csproj", "{4F6B8EA6-01F2-4421-9C64-08B36B3BCDDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Errors", "..\Errors\Errors.csproj", "{F7451F6F-0310-401B-ADC1-9230DD3EEEDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Errors", "..\Errors\Errors.csproj", "{F7451F6F-0310-401B-ADC1-9230DD3EEEDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

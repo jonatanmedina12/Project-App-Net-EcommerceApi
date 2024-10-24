@@ -1,7 +1,7 @@
 ﻿using Data.Repositories;
 using Errors.Errors;
 using Microsoft.AspNetCore.Hosting;
-using Models.DTOs;
+using Models.DTOs.Account;
 using Models.Entidades;
 using Models.Interface;
 using System.ComponentModel.DataAnnotations;

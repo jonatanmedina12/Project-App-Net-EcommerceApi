@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.RateLimiting;
 
 namespace API.Controllers
 {
-    [Route("ApiA/[controller]")]
+    [Route("Servicio/[controller]")]
     [ApiController]
     [EnableRateLimiting("fixed")]
     [ProducesResponseType(typeof(ApiResponse<>), StatusCodes.Status500InternalServerError)]

@@ -104,24 +104,74 @@ namespace API.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 10, 24, 12, 3, 2, 731, DateTimeKind.Utc).AddTicks(485),
+                            CreatedAt = new DateTime(2024, 10, 24, 13, 13, 9, 651, DateTimeKind.Utc).AddTicks(8491),
                             Description = "Administrador del sistema",
                             Name = "Admin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 10, 24, 12, 3, 2, 731, DateTimeKind.Utc).AddTicks(487),
+                            CreatedAt = new DateTime(2024, 10, 24, 13, 13, 9, 651, DateTimeKind.Utc).AddTicks(8495),
                             Description = "Usuario regular",
                             Name = "User"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 10, 24, 12, 3, 2, 731, DateTimeKind.Utc).AddTicks(489),
+                            CreatedAt = new DateTime(2024, 10, 24, 13, 13, 9, 651, DateTimeKind.Utc).AddTicks(8496),
                             Description = "Gestor de productos",
                             Name = "Manager"
                         });
+                });
+
+            modelBuilder.Entity("Models.Entidades.StockHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETUTCDATE()");
+
+                    b.Property<int>("ModifiedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NewStock")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OperationType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PreviousStock")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatedAt");
+
+                    b.HasIndex("ModifiedByUserId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("StockHistory", (string)null);
                 });
 
             modelBuilder.Entity("Models.Entidades.User", b =>
@@ -214,6 +264,25 @@ namespace API.Migrations
                     b.Navigation("CreatedByUser");
                 });
 
+            modelBuilder.Entity("Models.Entidades.StockHistory", b =>
+                {
+                    b.HasOne("Models.Entidades.User", "ModifiedByUser")
+                        .WithMany()
+                        .HasForeignKey("ModifiedByUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Models.Entidades.Product", "Product")
+                        .WithMany("StockHistories")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("ModifiedByUser");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Models.Entidades.UserRole", b =>
                 {
                     b.HasOne("Models.Entidades.Role", "Role")
@@ -231,6 +300,11 @@ namespace API.Migrations
                     b.Navigation("Role");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Models.Entidades.Product", b =>
+                {
+                    b.Navigation("StockHistories");
                 });
 
             modelBuilder.Entity("Models.Entidades.Role", b =>

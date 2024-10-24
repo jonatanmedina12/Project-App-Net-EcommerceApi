@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.DTOs
+namespace Models.DTOs.Account
 {
     public class UpdateUserProfileDto
     {
         [Required(ErrorMessage = "El Id del usuario es requerido")]
 
-        public int Id { get; set; }  
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "El nombre de usuario es requerido")]
         [MinLength(3, ErrorMessage = "El nombre de usuario debe tener al menos 3 caracteres")]

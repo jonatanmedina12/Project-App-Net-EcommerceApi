@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace Models.DTOs
 {
-    public class ProductDto
+    public class ProductListDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int Stock { get; set; }
-        public string CreatedByUsername { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
+        public bool IsDeleted { get; set; }
+        public string CreatedByUserName { get; set; }
     }
-
 }

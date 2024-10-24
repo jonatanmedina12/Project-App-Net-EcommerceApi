@@ -5,7 +5,7 @@ using Errors.Errors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Models.DTOs;
+using Models.DTOs.Account;
 using Models.Entidades;
 using Models.Interface;
 using System.ComponentModel.DataAnnotations;

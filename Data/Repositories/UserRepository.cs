@@ -3,7 +3,7 @@ using Data.Services;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Models.DTOs;
+using Models.DTOs.Account;
 using Models.Entidades;
 using Models.Extensions;
 using Models.Interface;

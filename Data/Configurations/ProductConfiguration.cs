@@ -43,6 +43,11 @@ namespace Data.Configurations
                 .WithMany(u => u.Products)
                 .HasForeignKey(p => p.CreatedByUserId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasMany(p => p.StockHistories)
+                 .WithOne(sh => sh.Product)
+                 .HasForeignKey(sh => sh.ProductId)
+                 .OnDelete(DeleteBehavior.Restrict);
         }
     
     }
