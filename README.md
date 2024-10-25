@@ -1,6 +1,6 @@
 # E-commerce API with .NET Core
 
-Este proyecto es una API RESTful desarrollada con .NET Core para gestionar un sistema de e-commerce. Implementa una arquitectura limpia y utiliza las mejores prácticas de desarrollo.
+Este proyecto es una API RESTful desarrollada con .NET Core para gestionar un sistema de e-commerce. Implementa una arquitectura limpia y utiliza las mejores prácticas de desarrollo, utiliza code first para la base de datos.
 
 ## 🚀 Características
 
@@ -15,7 +15,7 @@ Este proyecto es una API RESTful desarrollada con .NET Core para gestionar un si
 
 ## 🛠️ Tecnologías
 
-- .NET 8.0
+- .NET 7.0
 - Entity Framework Core
 - SQL Server
 - JWT para autenticación
@@ -122,13 +122,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 - GET /api/users - Obtener usuarios
 - GET /api/users/{id} - Obtener usuario por ID
 
-## 🧪 Testing
 
-Para ejecutar los tests:
-
-```bash
-dotnet test
-```
 
 ## 📄 Logging
 
@@ -150,8 +144,25 @@ El proyecto utiliza el sistema de logging integrado de .NET Core. Los logs se co
 
 La documentación de la API está disponible en `/swagger` cuando se ejecuta en modo desarrollo.
 
+## 📋 Collection Postman
 
+[CollectionPostma/.NetEcommers.postman_collection.json](CollectionPostma/.NetEcommers.postman_collection.json)
 
+Para importar la colección:
+1. Abre Postman
+2. Haz clic en el botón "Import"
+3. Arrastra el archivo de la colección o selecciónalo desde tu computadora
+4. Configura las variables de entorno:
+   - `baseUrl`: URL base de tu API (ej: https://localhost:???)
+   - `token`: Token JWT obtenido al hacer login
+   - 
+### Variables de Entorno de Postman
+```json
+{
+  "baseUrl": "https://localhost:7001",
+  "token": "tu_token_jwt"
+}
+```
 ## 📝 Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para detalles

@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "6616f865-1b65-45b3-8ddb-9e1656c9b935",
+		"name": ".NetEcommers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38464867"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"user@example.com\",\r\n  \"password\": \"1234567\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}api/Auth/login",
+					"host": [
+						"{{URL_}}api"
+					],
+					"path": [
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"jonatan0\",\r\n  \"email\": \"jonatan@hotmail.com\",\r\n  \"password\": \"1234567\",\r\n  \"roles\": [\r\n    \"User\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}api/Auth/register",
+					"host": [
+						"{{URL_}}api"
+					],
+					"path": [
+						"Auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfileUpdate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiI1Y2ViNTUwYi00NzMyLTQ0ZWItOGZjYS1hN2ExNDE5ZmRhOGQiLCJpYXQiOjE3Mjk3NzMxNjUsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc3MzE2NSwiZXhwIjoxNzI5Nzc2NzY1LCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.sHhr6hXahGTwTSxVlbo92zl7ZBKHanT2wukKXOT0tqjwU_Ju7oQum953pFudBG4WpSwkyTVn5gcAf5iquX_CfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":1,\r\n    \"Username\":\"jonatan1\",\r\n    \"Email\":\"jonatan@hotmail.com\",\r\n    \"ProfilePhoto\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}ApiA/Account/profile",
+					"host": [
+						"{{URL_}}ApiA"
+					],
+					"path": [
+						"Account",
+						"profile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ProfileUpdate",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":1,\r\n    \"Username\":\"jonatan1\",\r\n    \"Email\":\"jonatan@hotmail.com\",\r\n    \"ProfilePhoto\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_}}ApiA/Account/profile",
+							"host": [
+								"{{URL_}}ApiA"
+							],
+							"path": [
+								"Account",
+								"profile"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": [],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "TraerFoto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiI1Y2ViNTUwYi00NzMyLTQ0ZWItOGZjYS1hN2ExNDE5ZmRhOGQiLCJpYXQiOjE3Mjk3NzMxNjUsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc3MzE2NSwiZXhwIjoxNzI5Nzc2NzY1LCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.sHhr6hXahGTwTSxVlbo92zl7ZBKHanT2wukKXOT0tqjwU_Ju7oQum953pFudBG4WpSwkyTVn5gcAf5iquX_CfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_}}ApiA/Account/photo/1",
+					"host": [
+						"{{URL_}}ApiA"
+					],
+					"path": [
+						"Account",
+						"photo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarFoto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiI1Y2ViNTUwYi00NzMyLTQ0ZWItOGZjYS1hN2ExNDE5ZmRhOGQiLCJpYXQiOjE3Mjk3NzMxNjUsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc3MzE2NSwiZXhwIjoxNzI5Nzc2NzY1LCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.sHhr6hXahGTwTSxVlbo92zl7ZBKHanT2wukKXOT0tqjwU_Ju7oQum953pFudBG4WpSwkyTVn5gcAf5iquX_CfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}ApiA/Account/photo/1",
+					"host": [
+						"{{URL_}}ApiA"
+					],
+					"path": [
+						"Account",
+						"photo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearProducto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiI1Y2ViNTUwYi00NzMyLTQ0ZWItOGZjYS1hN2ExNDE5ZmRhOGQiLCJpYXQiOjE3Mjk3NzMxNjUsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc3MzE2NSwiZXhwIjoxNzI5Nzc2NzY1LCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.sHhr6hXahGTwTSxVlbo92zl7ZBKHanT2wukKXOT0tqjwU_Ju7oQum953pFudBG4WpSwkyTVn5gcAf5iquX_CfQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"string\",\r\n  \"description\": \"string\",\r\n  \"price\": 0,\r\n  \"stock\": 0,\r\n  \"createdId\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}Servicio/Product/CrearProducto",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Product",
+						"CrearProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarProducto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"string\",\r\n  \"description\": \"string\",\r\n  \"price\": 0,\r\n  \"stock\": 0,\r\n  \"createdId\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}Servicio/Product/1",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarProducto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL_}}Servicio/Product/2",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarProductoId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_}}Servicio/Product/3",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Product",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorPalabra",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}Servicio/Product/search?searchTerm=1",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Product",
+						"search"
+					],
+					"query": [
+						{
+							"key": "searchTerm",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TraerProducto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_}}Servicio/Product",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarStock",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"quantity\": 2147483647,\r\n  \"operationType\": 0,\r\n  \"reason\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_}}Servicio/Stock/2/update",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Stock",
+						"2",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarHistoricoStock",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_}}Servicio/Stock/1/history",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Stock",
+						"1",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarHistorialPorUsuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_}}Servicio/Stock/my-history",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Stock",
+						"my-history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarHistorialPorId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwidW5pcXVlX25hbWUiOiJtZWRpbmEiLCJlbWFpbCI6InVzZXJAZXhhbXBsZS5jb20iLCJqdGkiOiJlNGZjNzY4My1mMDc1LTQ4NTQtOTAxYi02OWU1OTAwY2MxOTIiLCJpYXQiOjE3Mjk3ODYwNTEsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTcyOTc4NjA1MSwiZXhwIjoxNzI5Nzg5NjUxLCJpc3MiOiJBUFAiLCJhdWQiOiJBUFAxIn0.1rTSqrFT5nxHPe-rU2ZL6wLryssNyktFiquOaFciAjG_mRDRckKImV7DsMukSdLiMyrA0xFt1mZaGuixAflBfw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_}}Servicio/Stock/user/1/history",
+					"host": [
+						"{{URL_}}Servicio"
+					],
+					"path": [
+						"Stock",
+						"user",
+						"1",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
