@@ -71,6 +71,7 @@ namespace Data.Services
                 existingProduct.Name = productDto.Name;
                 existingProduct.Description = productDto.Description;
                 existingProduct.Price = productDto.Price;
+                existingProduct.Stock = productDto.Stock;
 
                 return await productRepository.UpdateAsync(existingProduct);
             }

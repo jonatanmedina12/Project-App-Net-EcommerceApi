@@ -3,25 +3,36 @@
   "WorkspaceRootPath": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\api\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|solutionrelative:controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\api\\extensions\\serviciosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|solutionrelative:extensions\\serviciosaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D14AB4B-BCD4-4892-A439-DE009BD784EB}|..\\Data\\Data.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\data\\services\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D14AB4B-BCD4-4892-A439-DE009BD784EB}|..\\Data\\Data.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\data\\repositories\\stockhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D14AB4B-BCD4-4892-A439-DE009BD784EB}|..\\Data\\Data.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\data\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F6B8EA6-01F2-4421-9C64-08B36B3BCDDE}|..\\Models\\Models.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\models\\interface\\istockhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D14AB4B-BCD4-4892-A439-DE009BD784EB}|..\\Data\\Data.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\data\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\api\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|solutionrelative:controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6B8EA6-01F2-4421-9C64-08B36B3BCDDE}|..\\Models\\Models.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\models\\interface\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D14AB4B-BCD4-4892-A439-DE009BD784EB}|..\\Data\\Data.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\data\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|d:\\repositorios\\project-app-net-ecommerceapi\\api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B82E8996-6F54-4A9B-9514-97D1BE388E27}|API.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,79 +47,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAuwH0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:13:33.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "StockController.cs",
               "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\StockController.cs",
               "RelativeDocumentMoniker": "Controllers\\StockController.cs",
               "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\StockController.cs",
               "RelativeToolTip": "Controllers\\StockController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAswGgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wCYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:57:25.08Z",
+              "WhenOpened": "2024-10-24T18:03:49.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ServiciosAplicacion.cs",
-              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Extensions\\ServiciosAplicacion.cs",
-              "RelativeDocumentMoniker": "Extensions\\ServiciosAplicacion.cs",
-              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Extensions\\ServiciosAplicacion.cs",
-              "RelativeToolTip": "Extensions\\ServiciosAplicacion.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAgwEMAAAAuAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAmwHAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:56:17.182Z",
+              "WhenOpened": "2024-10-24T18:02:28.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StockService.cs",
-              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Services\\StockService.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Services\\StockService.cs",
-              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Services\\StockService.cs",
-              "RelativeToolTip": "..\\Data\\Services\\StockService.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAwIIAAABCAAAAAAAAAA==",
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Services\\AuthService.cs",
+              "RelativeToolTip": "..\\Data\\Services\\AuthService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:54:38.255Z",
+              "WhenOpened": "2024-10-24T17:57:34.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Models\\Interface\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "..\\Models\\Interface\\IAuthRepository.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Models\\Interface\\IAuthRepository.cs",
+              "RelativeToolTip": "..\\Models\\Interface\\IAuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T17:52:42.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Services\\ProductService.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Services\\ProductService.cs",
+              "RelativeToolTip": "..\\Data\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T17:27:23.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T17:24:06.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IStockHistoryRepository.cs",
-              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Models\\Interface\\IStockHistoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Interface\\IStockHistoryRepository.cs",
-              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Models\\Interface\\IStockHistoryRepository.cs",
-              "RelativeToolTip": "..\\Models\\Interface\\IStockHistoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "AutenticacionController.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\AutenticacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AutenticacionController.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\AutenticacionController.cs",
+              "RelativeToolTip": "Controllers\\AutenticacionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:52:46.51Z",
+              "WhenOpened": "2024-10-24T17:23:59.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "StockHistoryRepository.cs",
-              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Repositories\\StockHistoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Repositories\\StockHistoryRepository.cs",
-              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Repositories\\StockHistoryRepository.cs",
-              "RelativeToolTip": "..\\Data\\Repositories\\StockHistoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Repositories\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Repositories\\AuthRepository.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\Data\\Repositories\\AuthRepository.cs",
+              "RelativeToolTip": "..\\Data\\Repositories\\AuthRepository.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAqwGsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:52:34.821Z",
+              "WhenOpened": "2024-10-24T16:59:55.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Repositorios\\Project-App-Net-EcommerceApi\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T16:59:41.436Z",
               "EditorCaption": ""
             }
           ]

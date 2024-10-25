@@ -13,6 +13,8 @@ namespace Models.Interface
     {
         Task<User> RegisterAsync(CreateUserDto createUserDto);
         Task<LoginResponseDto> LoginAsync(LoginDto loginDto);
+        Task<bool> Logout(int id);
+
         Task<bool> ChangePasswordAsync(int userId, string currentPassword, string newPassword);
         Task<UserDto> UpdateUserProfileAsync(int userId, UpdateUserProfileDto updateDto);
         Task<string> UploadProfilePhotoAsync(int userId, IFormFile photo);
