@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.DTOs
+namespace Models.Entidades
 {
-    public class UpdateStockDto
+    public enum StockOperationType
     {
-        public int Quantity { get; set; }
-        public bool IsAdd { get; set; }
+        Addition,
+        Subtraction
     }
 }

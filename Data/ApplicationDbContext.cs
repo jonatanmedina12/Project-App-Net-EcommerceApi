@@ -20,6 +20,7 @@ namespace Data
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<StockHistory> StockHistory { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,6 +32,8 @@ namespace Data
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new StockHistoriesConfiguration());
+
 
             // Datos iniciales para roles
             modelBuilder.Entity<Role>().HasData(

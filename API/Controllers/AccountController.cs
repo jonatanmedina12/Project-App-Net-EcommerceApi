@@ -5,7 +5,7 @@ using Errors.Errors;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Models.DTOs;
+using Models.DTOs.Account;
 using Models.Interface;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;

@@ -55,14 +55,19 @@ namespace API.Extensions
                     }
                 });
             });
+            Services.AddAutoMapper(typeof(Program).Assembly); // Or use your startup class
+
             Services.AddScoped<IUserRepository, UserRepository>();
             Services.AddScoped<IRoleRepository, RoleRepository>();
             Services.AddScoped<IFileRepository, FileRepository>();
             Services.AddScoped<IAuthRepository, AuthRepository>();
-      
-    
+            Services.AddScoped<IProductRepository, ProductRepository>();
+            Services.AddScoped<IStockHistoryRepository, StockHistoryRepository>();
+            Services.AddScoped<StockService>();
+
             Services.AddScoped<AuthService>();
             Services.AddScoped<FileService>();
+            Services.AddScoped<ProductService>();
 
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             Services.AddDbContext<ApplicationDbContext>(options =>

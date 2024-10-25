@@ -1,10 +1,10 @@
 ﻿using Data.Repositories;
-using Models.DTOs;
 using Models.Entidades;
 using Models.Interface;
 using System.ComponentModel.DataAnnotations;
 using API.Errors;
 using Errors.Errors;
+using Models.DTOs.Account;
 namespace API.ConfigurationsFile
 {
     public class FileService : IFileRepository

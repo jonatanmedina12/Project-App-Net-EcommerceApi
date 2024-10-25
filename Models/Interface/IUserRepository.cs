@@ -1,4 +1,4 @@
-﻿using Models.DTOs;
+﻿using Models.DTOs.Account;
 using Models.Entidades;
 using System;
 using System.Collections.Generic;

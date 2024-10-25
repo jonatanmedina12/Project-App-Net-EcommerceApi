@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Models.DTOs;
+using Models.DTOs.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
